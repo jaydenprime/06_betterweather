@@ -30,7 +30,7 @@ THEN I am again presented with current and future conditions for that city
 
 ## Link to deployed application
 
-
+https://jaydenprime.github.io/06_betterweather/
 
 ## Screenshot
 
