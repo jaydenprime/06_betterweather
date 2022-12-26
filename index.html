@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Better Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+  <!-- Header -->
+    <header class="navbar customnav">BetterWeather</header>
+    
+  <!-- Search for City -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2" id="recentHistory">
+        
+          <h1>Search for City</h1>
+            <div>
+                <input id="cityName" type="text" placeholder="Atlanta">
+                  <button id=search onclick="search()">Search</button>
+            </div>
+            <br>
+            <div id="recent-searches"></div>
+          </div>
+
+
+   <!-- Current Weather for City -->
+        <div class="col-lg-10 border border-dark">
+          <div id ="date"></div>
+          <br>
+          <div id ="temp"></div>
+          <br>
+          <div id ="wind"></div>
+          <br>
+          <div id ="humidity"></div>
+          <br>
+          <div id ="uvindex"><p id="uvi"></p></div>
+          <br>
+        </div>
+        <!-- Empty Div -->
+        <div class="col-sm-2"></div>
+        <!-- 5 day Forecast Div -->
+        <div class="col-lg-10">
+          <div id="foreTitle">5 Day Forecast:</div>
+          <br>
+          <div class="d-flex">
+            <div id="fore1">
+              <img id="wicon1" src=""></img>
+              <div id="cast1"></div>
+            </div>
+            <div id="fore2">
+              <img id="wicon2" src=""></img>
+              <div id="cast2"></div>
+            </div>
+            <div id="fore3">
+              <img id="wicon3" src=""></img>
+              <div id="cast3"></div>
+            </div>
+            <div id="fore4">
+              <img id="wicon4" src=""></img>
+              <div id="cast4"></div>
+            </div>
+            <div id="fore5">
+              <img id="wicon5" src=""></img>
+              <div id="cast5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- moment.js library -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

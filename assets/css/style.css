@@ -1,0 +1,47 @@
+.customnav {
+    background-image: linear-gradient(to right, rgb(78, 78, 236), rgb(177, 215, 227));
+    font-size: 40px;
+    color: white;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#date {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#foreTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.great{
+    color: white;
+    background-color: green;
+    width: 7%;
+}
+
+.good{
+    color: white;
+    background-color: orange;
+    width: 7%;
+}
+
+.bad{
+    color: white;
+    background-color: red;
+    width: 7%;
+}
+
+#fore1, #fore2, #fore3, #fore4, #fore5 {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(81, 81, 146);
+    width: 250px;
+    height: 300px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+}
