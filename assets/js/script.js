@@ -1,6 +1,9 @@
 
 renderHistory();
-var recent = []
+var recent = [];
+const api = {
+    key: ''
+};
 
 // Function to City Name Search
 function weather(cityName) {
@@ -45,7 +48,6 @@ function search(){
     
 }
 
-
 // Displays recent search history
 function renderHistory(searchHistory) {
     if (searchHistory) {
@@ -59,8 +61,6 @@ function renderHistory(searchHistory) {
       });
     }
   }
-
-
 
 // Function to call for coordinates from weather function, 5 day forecast
 function forecast(longitude, latitude) {
@@ -86,8 +86,6 @@ function forecast(longitude, latitude) {
             if (uvIndex > 6) {
                 uvi.setAttribute("class", "bad")
             }
-
-            console.log(uvIndex)
             
             // Variables for 5 day forecast
             var date1 = moment().calendar()
@@ -144,8 +142,6 @@ function forecast(longitude, latitude) {
             document.getElementById("cast4").innerHTML = forecast4
             document.getElementById("cast5").innerHTML = forecast5
 
-
-            console.log(data)
         })
         .catch(error => {
           console.log(error)
